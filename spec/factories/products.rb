@@ -12,8 +12,8 @@
 
 FactoryGirl.define do
   factory :product do
-    name "MyString"
-    description "MyString"
+    name "My String"
+    description "My String"
     seller nil
   end
 end

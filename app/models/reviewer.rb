@@ -10,5 +10,10 @@
 #
 
 class Reviewer < ApplicationRecord
+  update_index('store#reviewer') { self }
+
   has_many :reviews
+
+  alias_attribute :title, :name
+  alias_attribute :description, :bio
 end

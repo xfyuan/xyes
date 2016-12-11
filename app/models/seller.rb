@@ -10,7 +10,9 @@
 #
 
 class Seller < ApplicationRecord
+  update_index('store#seller') { self }
+
   has_many :products
 
-  update_index('store#seller') { self }
+  alias_attribute :title, :name
 end

@@ -11,6 +11,10 @@
 #
 
 class Review < ApplicationRecord
+  update_index('store#review') { self }
+
   belongs_to :reviewer
   belongs_to :product
+
+  alias_attribute :description, :body
 end

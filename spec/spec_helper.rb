@@ -9,6 +9,8 @@ if ENV.fetch("COVERAGE", false)
   SimpleCov.start "rails"
 end
 
+require 'chewy/rspec'
+
 # http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

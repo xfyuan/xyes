@@ -11,6 +11,11 @@
 #
 
 class Product < ApplicationRecord
+  update_index('store#product') { self }
+  update_index('store#seller') { self }
+
   belongs_to :seller
   has_many :reviews
+
+  alias_attribute :title, :name
 end
