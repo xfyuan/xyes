@@ -14,6 +14,7 @@ gem 'redis'
 # gem "redis-rails"
 # gem 'redis-namespace'
 gem 'sidekiq'
+gem 'chewy'
 
 group :development do
   # gem "capistrano"
