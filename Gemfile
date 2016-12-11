@@ -6,8 +6,7 @@ gem 'rails', '~> 5.0.0'
 gem 'pg'
 gem 'puma'
 gem 'rack-cors'
-# gem 'active_model_serializers', '~> 0.10.0'
-gem 'jsonapi-resources'
+gem 'active_model_serializers', '~> 0.10.0'
 # Cronjob schedulers that can be coded in the
 # gem 'whenever', require: false
 gem 'redis'
