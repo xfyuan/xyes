@@ -16,5 +16,6 @@ class Review < ApplicationRecord
   belongs_to :reviewer
   belongs_to :product
 
+  alias_attribute :title, :body
   alias_attribute :description, :body
 end
