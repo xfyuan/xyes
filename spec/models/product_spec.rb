@@ -18,5 +18,6 @@ RSpec.describe Product, type: :model do
 
   it 'update es indices' do
     expect { products.map(&:save!) }.to update_index('store#product').and_reindex(products)
+    expect { products.map(&:save!) }.to update_index('store#seller').and_reindex(seller)
   end
 end

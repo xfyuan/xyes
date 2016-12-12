@@ -12,7 +12,7 @@
 
 class Product < ApplicationRecord
   update_index('store#product') { self }
-  update_index('store#seller') { self }
+  update_index('store#seller') { seller }
 
   belongs_to :seller
   has_many :reviews
