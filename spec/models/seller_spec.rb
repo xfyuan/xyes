@@ -12,5 +12,9 @@
 require 'rails_helper'
 
 RSpec.describe Seller, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:sellers) { create_list :seller, 2 }
+
+  it 'update es indices' do
+    expect { sellers.map(&:save!) }.to update_index('store#seller').and_reindex(sellers)
+  end
 end
