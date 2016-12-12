@@ -70,7 +70,7 @@ Style/SpaceBeforeFirstArg:
 
 # Defining a method with parameters needs parentheses.
 Style/MethodDefParentheses:
-  Enabled: true
+  Enabled: false
 
 # Use `foo {}` not `foo{}`.
 Style/SpaceBeforeBlockBraces:
@@ -89,8 +89,8 @@ Style/SpaceInsideParens:
 
 # Check quotes usage according to lint rule below.
 Style/StringLiterals:
-  Enabled: true
-  EnforcedStyle: double_quotes
+  Enabled: false
+  EnforcedStyle: single_quotes
 
 # Detect hard tabs, no hard tabs.
 Style/Tab:

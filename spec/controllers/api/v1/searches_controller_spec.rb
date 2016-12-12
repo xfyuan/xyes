@@ -30,8 +30,8 @@ RSpec.describe Api::V1::SearchesController, type: :controller do
     end
 
     it 'responds with searched records' do
-      expect(json['data'].map {|item| item['attributes']['title']}).to include seller.name
-      expect(json['data'].map {|item| item['attributes']['title']}).to include product.name
+      expect(json['data'].map { |item| item['attributes']['title'] }).to include seller.name
+      expect(json['data'].map { |item| item['attributes']['title'] }).to include product.name
     end
   end
 end
