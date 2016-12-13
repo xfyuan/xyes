@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Chewy.strategy(:atomic) do
+Chewy.strategy(:bypass) do
   # make seeding easy by resetting the primary key sequence
   ActiveRecord::Base.connection.reset_pk_sequence!('sellers')
 
