@@ -4,4 +4,7 @@ Rails.application.routes.draw do
       resources :searches, only: [:index]
     end
   end
+
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
 end
